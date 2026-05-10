@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Army Pension Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Army Pension Calculator</h1>
+<div class="form-box">
+<input type="number" id="basicPay" placeholder="Basic Pay">
+<input type="number" id="msp" placeholder="MSP">
+<input type="number" id="clPay" placeholder="Class Pay">
+<input type="number" id="xPay" placeholder="X Pay">
+<input type="number" id="daPercent" placeholder="DA Percentage">
+<input type="number" id="commutationPercent" placeholder="Commutation Percentage">
+<input type="number" id="age" placeholder="Age">
+<input type="number" id="serviceYears" placeholder="Service Years">
+<button onclick="calculatePension()">Calculate Pension</button>
+</div>
+<div class="result-box">
+<h2>Service Pension</h2>
+<p id="totalPay"></p>
+<p id="basicPension"></p>
+<p id="daOnPension"></p>
+<p id="fullPension"></p>
+
+<h2>Commutation</h2>
+<p id="commutedPension"></p>
+<p id="purchaseValue"></p>
+<p id="commutationAmount"></p>
+<p id="residualPension"></p>
+<p id="pensionAfterCommutation"></p>
+
+<h2>Gratuity</h2>
+<p id="lastEmoluments"></p>
+<p id="gratuityDA"></p>
+<p id="totalEmoluments"></p>
+<p id="qualifyingService"></p>
+<p id="grossGratuity"></p>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
